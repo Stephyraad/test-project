@@ -1,0 +1,183 @@
+$background-color: white;
+$base-blue-color: #23b6d5;
+$base-font-darker-color: #42413e;
+$base-font-lighter-color: #8f8f8f;
+$font-family: 'Open Sans', sans-serif;
+
+// Applies to all the Doc
+body{
+	background-color: $background-color;
+	margin: 0;
+	font-family: $font-family;
+	font-weight:200;
+}
+
+//A reacuring class for blue fonts, p and h3
+.bluefont{
+	color: $base-blue-color;
+}
+p{
+	color: $base-font-lighter-color;	
+}
+h3, h2{
+	color: $base-font-darker-color;	
+}
+
+
+header{
+	margin-top: 100px;
+	img{
+		width: 13.25%;
+		padding-left: 180px;
+	}
+	nav 
+		{
+		float:right;
+		padding: 0 140px 0 0;
+		margin-top: 10px;
+		
+		a{
+			text: {
+				transform: uppercase;
+				decoration: none;
+			}
+			font-size:0.8125em; //13px
+			color: #6b6b6b;
+			padding: 0 0 0 25px;
+
+			}
+		}
+}
+
+#section1{
+	background:url("../assets/background1.png") no-repeat;
+	width: 100%;
+	padding-bottom:6%;
+	h2, h3{
+		text-align: center;
+		font-weight: 100;
+	}
+	h2{
+		font-size: 2em;
+		padding-top: 75px;
+	}
+	h3{
+		font-size: 1.25em;
+	}
+	a{
+		text: {
+			transform:uppercase;
+			align: center;
+			decoration: none; 
+		}
+		padding: 15px;
+		background-color: $base-blue-color;
+		border-radius: 3px;
+		font-size: 13px;
+		color: $background-color;
+		display: block;
+		margin: auto;
+		width: 13%;
+		margin-top: 5%;
+	}
+}
+
+#section2{
+	img{
+		width: 100%;
+		margin: auto;
+	}	
+}
+
+#section3, #section4{
+	width: 58.54%;
+	margin: auto;
+	padding-top: 3%;
+	.clear{
+		clear: both;
+	}
+}
+
+#section3{
+		h1{
+		font-size: 25px;
+		font-family: $font-family;
+		font-weight: 400;
+		color: $base-font-darker-color;
+		text-align: center;
+		padding-bottom: 5%;;
+	}
+	.youtube {
+		width:72%;
+		float: left;
+	}
+	.instagram, .twitter{
+		float: right;
+		width:20%;
+		&.box{
+			margin-top: 5%;
+		}
+	}
+}
+
+#section4{
+	margin-top: 1%;
+	margin-bottom: 8%;
+
+
+	#socialfeed{
+	background-color:lighten($base-font-lighter-color, 41%);
+	}
+	img{
+		width: 100%;
+	}
+	h3, .break{
+		display: inline;
+		font-weight:100;
+	}
+	p{
+		margin-bottom: 0;
+		font-weight:100;
+	}
+	.feed{
+		border-bottom: 2px solid lighten($base-font-lighter-color, 38%);
+		line-height: 60%;
+		padding: 5% 0 5% 0;
+		img{
+			padding: 2%;
+			&.upvote{
+				width: 3%;
+				float:left;
+				position: relative;
+				top: -1em;
+				padding: 2% 6% 2% 5%;
+			}
+			&.dialogue{
+				float: right;
+				width: 5%;
+				padding-right: 5%;
+				position: relative;
+				top: -3.5em;
+			}
+		}
+		.break{
+			font-size: 80%;
+		}
+
+	}
+	.loadmore{
+			width: 7%;
+			display: block;
+			margin: auto;
+		}
+	.load{
+		border: none;
+		padding: 3% 0 3% 0;
+	}
+}
+
+footer{
+	background-color: $base-blue-color;
+	width: 100%;
+	height: 7%;
+}
